@@ -1,0 +1,31 @@
+{
+  "name": "task-manager-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": "^v22.12.0"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=dev ts-node-dev src/index.ts",
+    "start": "NODE_ENV=prod node build/index.js",
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "Jesus David Perez",
+  "license": "ISC",
+  "description": "Api de Aplicación para gestión de tareas",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "4.21.2"
+  }
+}
